@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Save Image to InspiredBy</title>
-        <script src="js/jquery-3.1.0.min.js"></script>
-        <script src="js/save-image.js"></script>
-    </head>
-    <body>
-        <div>
-            <img id="image_preview" src="">
-        </div>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Save Image to InspiredBy</title>
+    <link rel="stylesheet" href="/css/inspiredby-chrome-ext.css" media="screen" charset="utf-8">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/save-image.js"></script>
+</head>
+<body>
+    <header>
+        <div class="eyebrow">Save to</div>
+        <h1>InspiredBy</h1>
+    </header>
+    <main>
+        <section class="image">
+            <h2>Image</h2>
+            <div class="container">
+                <img id="image_preview" src="">
+            </div>
+        </section>
+        <section class="actions">
+            <button type="button" name="save_image" id="save_image">Save &amp; Close</button>
+        </section>
+    </main>
+</body>
 </html>

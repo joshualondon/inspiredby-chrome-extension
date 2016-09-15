@@ -25,4 +25,19 @@ $(document).ready(function() {
 
     $imagePreview.attr('src', imageUrl);
 
+
+
+
+
+
+
+
+
+
+
+
+    $('#save_image').on('click', function() {
+        window.close();
+    });
+
 });
