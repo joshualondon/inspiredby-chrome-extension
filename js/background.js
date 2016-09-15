@@ -17,10 +17,12 @@ function getClickHandler() {
     var url = 'save-image.html?image=' + info.srcUrl;
 
     // Create a new window to the info page.
-    chrome.windows.create({ url: url, width: 520, height: 660 });
+    chrome.windows.create({ url: url, width: 520, height: 660, type: 'panel' });
   };
 };
 
+// create the right-click context menu
+// available only for images
 chrome.contextMenus.create({
     "title": "Save to InspiredBy",
     "type": "normal",
